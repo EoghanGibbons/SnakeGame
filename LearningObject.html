@@ -1,0 +1,49 @@
+<HEAD>
+<TITLE>Learning Object</TITLE>
+</HEAD>
+<BODY BGCOLOR="Aquamarine">
+<CENTER>
+
+<H1>This learning object will teach you how to load and play looped sound and sound effects in Javascript, as well as control their volumes </H1>
+<H2>This learning object assumes you have or know how to set up a Game and Main class etc.  </H2>
+<H3>By Eoghan Murphy Gibbons C00142724</H3>
+
+</CENTER>
+
+For this LO I will be writing all my code using Sublime Text 2. 
+<br> </br>
+i.) For easiness sake, place the sounds that you will be using in the same folder as your index.html file.
+<br> </br>
+<img border="0" src="http://puu.sh/bfT1L/4b2dfe6125.png"> <br/>
+<br> </br>
+ii.)  To load your main sound (the one that will loop), go to the initialization method for your game, and load the sound like so
+<br> </br>
+<img border="0" src="http://puu.sh/bfTFu/e9bf55023d.png"> <br/>
+<br> </br>
+iii.) Directly afterwards, set the volume of your sound with the .volume parameter, this accepts a value between 0 and 1.
+<br> </br>
+<img border="0" src="http://puu.sh/bfTzl/7e30a2bf0c.png">
+<br> </br>
+To play this sound, we simply call the play function of the sound, like so
+ <br> </br>
+<img border = '0' src ="http://puu.sh/bfUbH/3f554edf86.png">
+ <br> </br>
+Now we've got our sound playing! congratulations, however, the sound will stop once it's reached it's end, so we need to add an event listener for when the sound has finished, so, before we play our sound we should add a listener to restart it once it's over
+<br> </br>
+<img border="0" src="http://puu.sh/bfUtD/d99ddc69b0.png">
+<br> </br>
+The false parameter here is a boolean value specifying whether to use event bubbling or event capturing. This parameter is optional, and we do not need to worry about it for this LO.
+<br> </br>
+Now we've got a sound playing and restarting once it's finished, this is all we need to do to add background music to our game, well done!  
+ <br>
+Next, let's look at playing sound effects in Javascript
+<br> </br>
+This is very similar to, and even easier than playing a looped sound, my sound effect is called dead.mp3, so as you can probably guess it's a sound effect that will play when the player character has died. In the section of code that detects when your game entity has died, simply load and play the sound like so
+<br> </br>
+<img border="0" src="http://puu.sh/bfY83/27c8e52d66.png">
+<br> </br>
+As you can see, this is trivial once we have an understanding of how playing sound works.
+
+<CENTER>
+<H4>Congratulations you know know how to load sounds, play background music, and play sound effects in Javascript, well done!</H4>
+</CENTER>
